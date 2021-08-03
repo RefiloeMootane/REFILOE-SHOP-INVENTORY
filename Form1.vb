@@ -52,6 +52,8 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SHOP_INVENTORYDataSet.CUSTOMER_DETAILS' table. You can move, or remove it, as needed.
+        Me.PRODUCT_CATALOGTableAdapter.Fill(Me.SHOPDataSet.PRODUCT_CATALOG)
+        'TODO: This line of code loads data into the 'SHOP_INVENTORYDataSet.CUSTOMER_DETAILS' table. You can move, or remove it, as needed.
         Me.CUSTOMER_DETAILSTableAdapter.Fill(Me.SHOPDataSet.CUSTOMER_DETAILS)
 
 

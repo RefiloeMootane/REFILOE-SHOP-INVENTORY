@@ -44,6 +44,16 @@ Partial Class Form1
         Dim LEVELLabel As System.Windows.Forms.Label
         Dim UNIT_PRICELabel As System.Windows.Forms.Label
         Dim MAXIMUM_LEVELLabel As System.Windows.Forms.Label
+        Me.PRODUCT_IDLabel2 = New System.Windows.Forms.Label()
+        Me.ORDER_IDLabel2 = New System.Windows.Forms.Label()
+        Me.QUANTITYLabel1 = New System.Windows.Forms.Label()
+        Me.PRODUCT_IDLabel3 = New System.Windows.Forms.Label()
+        Me.PRODUCT_CATEGORYLabel1 = New System.Windows.Forms.Label()
+        Me.PRODUCT__NAMELabel1 = New System.Windows.Forms.Label()
+        Me.PRODUCT_SIZELabel1 = New System.Windows.Forms.Label()
+        Me.LEVELLabel1 = New System.Windows.Forms.Label()
+        Me.UNIT_PRICELabel1 = New System.Windows.Forms.Label()
+        Me.MAXIMUM_LEVELLabel1 = New System.Windows.Forms.Label()
         Me.SHOPDataSet = New REFILOE_SHOP_INVENTORY.SHOPDataSet()
         Me.SHOPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SHOPTableAdapter = New REFILOE_SHOP_INVENTORY.SHOPDataSetTableAdapters.SHOPTableAdapter()
@@ -81,6 +91,12 @@ Partial Class Form1
         Me.ADDRESSTextBox = New System.Windows.Forms.TextBox()
         Me.CONTACT_NUMBERTextBox = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.PRODUCT_DETAILSDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -125,7 +141,29 @@ Partial Class Form1
         Me.PRODUCT_CATALOGTableAdapter = New REFILOE_SHOP_INVENTORY.SHOPDataSetTableAdapters.PRODUCT_CATALOGTableAdapter()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.PRODUCT_DETAILSDataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PRODUCT_IDTextBox2 = New System.Windows.Forms.TextBox()
+        Me.ORDER_IDTextBox2 = New System.Windows.Forms.TextBox()
+        Me.QUANTITYTextBox1 = New System.Windows.Forms.TextBox()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.PRODUCT_CATALOGDataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PRODUCT_IDTextBox3 = New System.Windows.Forms.TextBox()
+        Me.PRODUCT_CATEGORYTextBox1 = New System.Windows.Forms.TextBox()
+        Me.PRODUCT__NAMETextBox1 = New System.Windows.Forms.TextBox()
+        Me.PRODUCT_SIZETextBox1 = New System.Windows.Forms.TextBox()
+        Me.LEVELTextBox1 = New System.Windows.Forms.TextBox()
+        Me.UNIT_PRICETextBox1 = New System.Windows.Forms.TextBox()
+        Me.MAXIMUM_LEVELTextBox1 = New System.Windows.Forms.TextBox()
         CUSTOMER_IDLabel = New System.Windows.Forms.Label()
         TITLELabel = New System.Windows.Forms.Label()
         FIRST_NAMELabel = New System.Windows.Forms.Label()
@@ -164,6 +202,10 @@ Partial Class Form1
         CType(Me.PRODUCT_CATALOGDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCT_CATALOGBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl2.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
+        CType(Me.PRODUCT_DETAILSDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage6.SuspendLayout()
+        CType(Me.PRODUCT_CATALOGDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CUSTOMER_IDLabel
@@ -355,6 +397,96 @@ Partial Class Form1
         MAXIMUM_LEVELLabel.TabIndex = 12
         MAXIMUM_LEVELLabel.Text = "MAXIMUM LEVEL:"
         '
+        'PRODUCT_IDLabel2
+        '
+        Me.PRODUCT_IDLabel2.AutoSize = True
+        Me.PRODUCT_IDLabel2.Location = New System.Drawing.Point(6, 7)
+        Me.PRODUCT_IDLabel2.Name = "PRODUCT_IDLabel2"
+        Me.PRODUCT_IDLabel2.Size = New System.Drawing.Size(88, 13)
+        Me.PRODUCT_IDLabel2.TabIndex = 0
+        Me.PRODUCT_IDLabel2.Text = "PRODUCT ID:"
+        '
+        'ORDER_IDLabel2
+        '
+        Me.ORDER_IDLabel2.AutoSize = True
+        Me.ORDER_IDLabel2.Location = New System.Drawing.Point(6, 33)
+        Me.ORDER_IDLabel2.Name = "ORDER_IDLabel2"
+        Me.ORDER_IDLabel2.Size = New System.Drawing.Size(72, 13)
+        Me.ORDER_IDLabel2.TabIndex = 2
+        Me.ORDER_IDLabel2.Text = "ORDER ID:"
+        '
+        'QUANTITYLabel1
+        '
+        Me.QUANTITYLabel1.AutoSize = True
+        Me.QUANTITYLabel1.Location = New System.Drawing.Point(6, 59)
+        Me.QUANTITYLabel1.Name = "QUANTITYLabel1"
+        Me.QUANTITYLabel1.Size = New System.Drawing.Size(74, 13)
+        Me.QUANTITYLabel1.TabIndex = 4
+        Me.QUANTITYLabel1.Text = "QUANTITY:"
+        '
+        'PRODUCT_IDLabel3
+        '
+        Me.PRODUCT_IDLabel3.AutoSize = True
+        Me.PRODUCT_IDLabel3.Location = New System.Drawing.Point(9, 7)
+        Me.PRODUCT_IDLabel3.Name = "PRODUCT_IDLabel3"
+        Me.PRODUCT_IDLabel3.Size = New System.Drawing.Size(88, 13)
+        Me.PRODUCT_IDLabel3.TabIndex = 0
+        Me.PRODUCT_IDLabel3.Text = "PRODUCT ID:"
+        '
+        'PRODUCT_CATEGORYLabel1
+        '
+        Me.PRODUCT_CATEGORYLabel1.AutoSize = True
+        Me.PRODUCT_CATEGORYLabel1.Location = New System.Drawing.Point(9, 33)
+        Me.PRODUCT_CATEGORYLabel1.Name = "PRODUCT_CATEGORYLabel1"
+        Me.PRODUCT_CATEGORYLabel1.Size = New System.Drawing.Size(142, 13)
+        Me.PRODUCT_CATEGORYLabel1.TabIndex = 2
+        Me.PRODUCT_CATEGORYLabel1.Text = "PRODUCT CATEGORY:"
+        '
+        'PRODUCT__NAMELabel1
+        '
+        Me.PRODUCT__NAMELabel1.AutoSize = True
+        Me.PRODUCT__NAMELabel1.Location = New System.Drawing.Point(9, 59)
+        Me.PRODUCT__NAMELabel1.Name = "PRODUCT__NAMELabel1"
+        Me.PRODUCT__NAMELabel1.Size = New System.Drawing.Size(114, 13)
+        Me.PRODUCT__NAMELabel1.TabIndex = 4
+        Me.PRODUCT__NAMELabel1.Text = "PRODUCT  NAME:"
+        '
+        'PRODUCT_SIZELabel1
+        '
+        Me.PRODUCT_SIZELabel1.AutoSize = True
+        Me.PRODUCT_SIZELabel1.Location = New System.Drawing.Point(9, 85)
+        Me.PRODUCT_SIZELabel1.Name = "PRODUCT_SIZELabel1"
+        Me.PRODUCT_SIZELabel1.Size = New System.Drawing.Size(103, 13)
+        Me.PRODUCT_SIZELabel1.TabIndex = 6
+        Me.PRODUCT_SIZELabel1.Text = "PRODUCT SIZE:"
+        '
+        'LEVELLabel1
+        '
+        Me.LEVELLabel1.AutoSize = True
+        Me.LEVELLabel1.Location = New System.Drawing.Point(9, 111)
+        Me.LEVELLabel1.Name = "LEVELLabel1"
+        Me.LEVELLabel1.Size = New System.Drawing.Size(49, 13)
+        Me.LEVELLabel1.TabIndex = 8
+        Me.LEVELLabel1.Text = "LEVEL:"
+        '
+        'UNIT_PRICELabel1
+        '
+        Me.UNIT_PRICELabel1.AutoSize = True
+        Me.UNIT_PRICELabel1.Location = New System.Drawing.Point(9, 137)
+        Me.UNIT_PRICELabel1.Name = "UNIT_PRICELabel1"
+        Me.UNIT_PRICELabel1.Size = New System.Drawing.Size(82, 13)
+        Me.UNIT_PRICELabel1.TabIndex = 10
+        Me.UNIT_PRICELabel1.Text = "UNIT PRICE:"
+        '
+        'MAXIMUM_LEVELLabel1
+        '
+        Me.MAXIMUM_LEVELLabel1.AutoSize = True
+        Me.MAXIMUM_LEVELLabel1.Location = New System.Drawing.Point(9, 163)
+        Me.MAXIMUM_LEVELLabel1.Name = "MAXIMUM_LEVELLabel1"
+        Me.MAXIMUM_LEVELLabel1.Size = New System.Drawing.Size(112, 13)
+        Me.MAXIMUM_LEVELLabel1.TabIndex = 12
+        Me.MAXIMUM_LEVELLabel1.Text = "MAXIMUM LEVEL:"
+        '
         'SHOPDataSet
         '
         Me.SHOPDataSet.DataSetName = "SHOPDataSet"
@@ -391,10 +523,10 @@ Partial Class Form1
         '
         'txtPASSWORD
         '
-        Me.txtPASSWORD.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPASSWORD.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPASSWORD.Location = New System.Drawing.Point(120, 123)
         Me.txtPASSWORD.Name = "txtPASSWORD"
-        Me.txtPASSWORD.Size = New System.Drawing.Size(142, 21)
+        Me.txtPASSWORD.Size = New System.Drawing.Size(142, 20)
         Me.txtPASSWORD.TabIndex = 1
         '
         'cmbUsername
@@ -418,16 +550,17 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.lblPassword)
         Me.GroupBox1.Controls.Add(Me.lblUsername)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(778, 210)
+        Me.GroupBox1.Size = New System.Drawing.Size(944, 218)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "LOGIN SCREEN"
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(120, 90)
+        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(120, 85)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(142, 27)
@@ -490,10 +623,10 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(12, 304)
+        Me.TabControl1.Location = New System.Drawing.Point(3, 314)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(778, 401)
+        Me.TabControl1.Size = New System.Drawing.Size(873, 429)
         Me.TabControl1.TabIndex = 4
         '
         'TabPage1
@@ -521,7 +654,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(770, 375)
+        Me.TabPage1.Size = New System.Drawing.Size(865, 403)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "CUSTOMER DETAILS"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -683,6 +816,12 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.AutoScroll = True
+        Me.TabPage2.Controls.Add(Me.Button1)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.Button3)
+        Me.TabPage2.Controls.Add(Me.Button4)
+        Me.TabPage2.Controls.Add(Me.Button5)
+        Me.TabPage2.Controls.Add(Me.Button6)
         Me.TabPage2.Controls.Add(Me.PRODUCT_DETAILSDataGridView)
         Me.TabPage2.Controls.Add(PRODUCT_IDLabel)
         Me.TabPage2.Controls.Add(Me.PRODUCT_IDTextBox)
@@ -693,10 +832,64 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(770, 375)
+        Me.TabPage2.Size = New System.Drawing.Size(865, 403)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "PRODUCT DETAILS"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(586, 228)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 23)
+        Me.Button1.TabIndex = 24
+        Me.Button1.Text = "EXIT"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(586, 171)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(91, 23)
+        Me.Button2.TabIndex = 23
+        Me.Button2.Text = "DELETE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(586, 118)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(91, 23)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "SAVE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(409, 228)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(92, 23)
+        Me.Button4.TabIndex = 21
+        Me.Button4.Text = "PREVIOUS"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(409, 176)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(92, 23)
+        Me.Button5.TabIndex = 20
+        Me.Button5.Text = "NEXT"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(409, 117)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(92, 23)
+        Me.Button6.TabIndex = 19
+        Me.Button6.Text = "ADD"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'PRODUCT_DETAILSDataGridView
         '
@@ -773,7 +966,7 @@ Partial Class Form1
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(770, 375)
+        Me.TabPage3.Size = New System.Drawing.Size(865, 403)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "PRODUCT ORDER"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -889,7 +1082,7 @@ Partial Class Form1
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(770, 375)
+        Me.TabPage4.Size = New System.Drawing.Size(865, 403)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "PRODUCT CATALOG"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -900,7 +1093,7 @@ Partial Class Form1
         Me.PRODUCT_CATALOGDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PRODUCT_CATALOGDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.PRODUCT_CATALOGDataGridView.DataSource = Me.PRODUCT_CATALOGBindingSource
-        Me.PRODUCT_CATALOGDataGridView.Location = New System.Drawing.Point(6, 212)
+        Me.PRODUCT_CATALOGDataGridView.Location = New System.Drawing.Point(21, 208)
         Me.PRODUCT_CATALOGDataGridView.Name = "PRODUCT_CATALOGDataGridView"
         Me.PRODUCT_CATALOGDataGridView.Size = New System.Drawing.Size(743, 136)
         Me.PRODUCT_CATALOGDataGridView.TabIndex = 14
@@ -955,7 +1148,7 @@ Partial Class Form1
         'PRODUCT_IDTextBox1
         '
         Me.PRODUCT_IDTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT ID", True))
-        Me.PRODUCT_IDTextBox1.Location = New System.Drawing.Point(143, 20)
+        Me.PRODUCT_IDTextBox1.Location = New System.Drawing.Point(158, 16)
         Me.PRODUCT_IDTextBox1.Name = "PRODUCT_IDTextBox1"
         Me.PRODUCT_IDTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.PRODUCT_IDTextBox1.TabIndex = 1
@@ -963,7 +1156,7 @@ Partial Class Form1
         'PRODUCT_CATEGORYTextBox
         '
         Me.PRODUCT_CATEGORYTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT CATEGORY", True))
-        Me.PRODUCT_CATEGORYTextBox.Location = New System.Drawing.Point(143, 46)
+        Me.PRODUCT_CATEGORYTextBox.Location = New System.Drawing.Point(158, 42)
         Me.PRODUCT_CATEGORYTextBox.Name = "PRODUCT_CATEGORYTextBox"
         Me.PRODUCT_CATEGORYTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PRODUCT_CATEGORYTextBox.TabIndex = 3
@@ -971,7 +1164,7 @@ Partial Class Form1
         'PRODUCT__NAMETextBox
         '
         Me.PRODUCT__NAMETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT  NAME", True))
-        Me.PRODUCT__NAMETextBox.Location = New System.Drawing.Point(143, 72)
+        Me.PRODUCT__NAMETextBox.Location = New System.Drawing.Point(158, 68)
         Me.PRODUCT__NAMETextBox.Name = "PRODUCT__NAMETextBox"
         Me.PRODUCT__NAMETextBox.Size = New System.Drawing.Size(100, 20)
         Me.PRODUCT__NAMETextBox.TabIndex = 5
@@ -979,7 +1172,7 @@ Partial Class Form1
         'PRODUCT_SIZETextBox
         '
         Me.PRODUCT_SIZETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT SIZE", True))
-        Me.PRODUCT_SIZETextBox.Location = New System.Drawing.Point(143, 98)
+        Me.PRODUCT_SIZETextBox.Location = New System.Drawing.Point(158, 94)
         Me.PRODUCT_SIZETextBox.Name = "PRODUCT_SIZETextBox"
         Me.PRODUCT_SIZETextBox.Size = New System.Drawing.Size(100, 20)
         Me.PRODUCT_SIZETextBox.TabIndex = 7
@@ -987,7 +1180,7 @@ Partial Class Form1
         'LEVELTextBox
         '
         Me.LEVELTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "LEVEL", True))
-        Me.LEVELTextBox.Location = New System.Drawing.Point(143, 124)
+        Me.LEVELTextBox.Location = New System.Drawing.Point(158, 120)
         Me.LEVELTextBox.Name = "LEVELTextBox"
         Me.LEVELTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LEVELTextBox.TabIndex = 9
@@ -995,7 +1188,7 @@ Partial Class Form1
         'UNIT_PRICETextBox
         '
         Me.UNIT_PRICETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "UNIT PRICE", True))
-        Me.UNIT_PRICETextBox.Location = New System.Drawing.Point(143, 150)
+        Me.UNIT_PRICETextBox.Location = New System.Drawing.Point(158, 146)
         Me.UNIT_PRICETextBox.Name = "UNIT_PRICETextBox"
         Me.UNIT_PRICETextBox.Size = New System.Drawing.Size(100, 20)
         Me.UNIT_PRICETextBox.TabIndex = 11
@@ -1003,7 +1196,7 @@ Partial Class Form1
         'MAXIMUM_LEVELTextBox
         '
         Me.MAXIMUM_LEVELTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "MAXIMUM LEVEL", True))
-        Me.MAXIMUM_LEVELTextBox.Location = New System.Drawing.Point(143, 176)
+        Me.MAXIMUM_LEVELTextBox.Location = New System.Drawing.Point(158, 172)
         Me.MAXIMUM_LEVELTextBox.Name = "MAXIMUM_LEVELTextBox"
         Me.MAXIMUM_LEVELTextBox.Size = New System.Drawing.Size(100, 20)
         Me.MAXIMUM_LEVELTextBox.TabIndex = 13
@@ -1029,40 +1222,226 @@ Partial Class Form1
         Me.TabControl2.Controls.Add(Me.TabPage5)
         Me.TabControl2.Controls.Add(Me.TabPage6)
         Me.TabControl2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl2.Location = New System.Drawing.Point(22, 244)
+        Me.TabControl2.Location = New System.Drawing.Point(3, 236)
         Me.TabControl2.Name = "TabControl2"
         Me.TabControl2.SelectedIndex = 0
-        Me.TabControl2.Size = New System.Drawing.Size(768, 44)
+        Me.TabControl2.Size = New System.Drawing.Size(863, 72)
         Me.TabControl2.TabIndex = 5
         '
         'TabPage5
         '
+        Me.TabPage5.AutoScroll = True
+        Me.TabPage5.Controls.Add(Me.PRODUCT_DETAILSDataGridView1)
+        Me.TabPage5.Controls.Add(Me.PRODUCT_IDLabel2)
+        Me.TabPage5.Controls.Add(Me.PRODUCT_IDTextBox2)
+        Me.TabPage5.Controls.Add(Me.ORDER_IDLabel2)
+        Me.TabPage5.Controls.Add(Me.ORDER_IDTextBox2)
+        Me.TabPage5.Controls.Add(Me.QUANTITYLabel1)
+        Me.TabPage5.Controls.Add(Me.QUANTITYTextBox1)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(760, 18)
+        Me.TabPage5.Size = New System.Drawing.Size(855, 46)
         Me.TabPage5.TabIndex = 0
         Me.TabPage5.Text = "PRODUCT DETAILS"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'PRODUCT_DETAILSDataGridView1
+        '
+        Me.PRODUCT_DETAILSDataGridView1.AutoGenerateColumns = False
+        Me.PRODUCT_DETAILSDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.PRODUCT_DETAILSDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
+        Me.PRODUCT_DETAILSDataGridView1.DataSource = Me.PRODUCT_DETAILSBindingSource
+        Me.PRODUCT_DETAILSDataGridView1.Location = New System.Drawing.Point(0, 137)
+        Me.PRODUCT_DETAILSDataGridView1.Name = "PRODUCT_DETAILSDataGridView1"
+        Me.PRODUCT_DETAILSDataGridView1.Size = New System.Drawing.Size(373, 151)
+        Me.PRODUCT_DETAILSDataGridView1.TabIndex = 6
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "PRODUCT ID"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "PRODUCT ID"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "ORDER ID"
+        Me.DataGridViewTextBoxColumn21.HeaderText = "ORDER ID"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "QUANTITY"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "QUANTITY"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        '
+        'PRODUCT_IDTextBox2
+        '
+        Me.PRODUCT_IDTextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_DETAILSBindingSource, "PRODUCT ID", True))
+        Me.PRODUCT_IDTextBox2.Location = New System.Drawing.Point(100, 4)
+        Me.PRODUCT_IDTextBox2.Name = "PRODUCT_IDTextBox2"
+        Me.PRODUCT_IDTextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.PRODUCT_IDTextBox2.TabIndex = 1
+        '
+        'ORDER_IDTextBox2
+        '
+        Me.ORDER_IDTextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_DETAILSBindingSource, "ORDER ID", True))
+        Me.ORDER_IDTextBox2.Location = New System.Drawing.Point(100, 30)
+        Me.ORDER_IDTextBox2.Name = "ORDER_IDTextBox2"
+        Me.ORDER_IDTextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.ORDER_IDTextBox2.TabIndex = 3
+        '
+        'QUANTITYTextBox1
+        '
+        Me.QUANTITYTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_DETAILSBindingSource, "QUANTITY", True))
+        Me.QUANTITYTextBox1.Location = New System.Drawing.Point(100, 56)
+        Me.QUANTITYTextBox1.Name = "QUANTITYTextBox1"
+        Me.QUANTITYTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.QUANTITYTextBox1.TabIndex = 5
+        '
         'TabPage6
         '
+        Me.TabPage6.AutoScroll = True
+        Me.TabPage6.Controls.Add(Me.PRODUCT_CATALOGDataGridView1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_IDLabel3)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_IDTextBox3)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_CATEGORYLabel1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_CATEGORYTextBox1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT__NAMELabel1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT__NAMETextBox1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_SIZELabel1)
+        Me.TabPage6.Controls.Add(Me.PRODUCT_SIZETextBox1)
+        Me.TabPage6.Controls.Add(Me.LEVELLabel1)
+        Me.TabPage6.Controls.Add(Me.LEVELTextBox1)
+        Me.TabPage6.Controls.Add(Me.UNIT_PRICELabel1)
+        Me.TabPage6.Controls.Add(Me.UNIT_PRICETextBox1)
+        Me.TabPage6.Controls.Add(Me.MAXIMUM_LEVELLabel1)
+        Me.TabPage6.Controls.Add(Me.MAXIMUM_LEVELTextBox1)
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(760, 18)
+        Me.TabPage6.Size = New System.Drawing.Size(855, 340)
         Me.TabPage6.TabIndex = 1
         Me.TabPage6.Text = "PRODUCTCATALOG"
         Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'PRODUCT_CATALOGDataGridView1
+        '
+        Me.PRODUCT_CATALOGDataGridView1.AutoGenerateColumns = False
+        Me.PRODUCT_CATALOGDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.PRODUCT_CATALOGDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29})
+        Me.PRODUCT_CATALOGDataGridView1.DataSource = Me.PRODUCT_CATALOGBindingSource
+        Me.PRODUCT_CATALOGDataGridView1.Location = New System.Drawing.Point(6, 196)
+        Me.PRODUCT_CATALOGDataGridView1.Name = "PRODUCT_CATALOGDataGridView1"
+        Me.PRODUCT_CATALOGDataGridView1.Size = New System.Drawing.Size(719, 121)
+        Me.PRODUCT_CATALOGDataGridView1.TabIndex = 14
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.DataPropertyName = "PRODUCT ID"
+        Me.DataGridViewTextBoxColumn23.HeaderText = "PRODUCT ID"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.DataPropertyName = "PRODUCT CATEGORY"
+        Me.DataGridViewTextBoxColumn24.HeaderText = "PRODUCT CATEGORY"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.DataPropertyName = "PRODUCT  NAME"
+        Me.DataGridViewTextBoxColumn25.HeaderText = "PRODUCT  NAME"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "PRODUCT SIZE"
+        Me.DataGridViewTextBoxColumn26.HeaderText = "PRODUCT SIZE"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.DataPropertyName = "LEVEL"
+        Me.DataGridViewTextBoxColumn27.HeaderText = "LEVEL"
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "UNIT PRICE"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "UNIT PRICE"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "MAXIMUM LEVEL"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "MAXIMUM LEVEL"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        '
+        'PRODUCT_IDTextBox3
+        '
+        Me.PRODUCT_IDTextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT ID", True))
+        Me.PRODUCT_IDTextBox3.Location = New System.Drawing.Point(157, 4)
+        Me.PRODUCT_IDTextBox3.Name = "PRODUCT_IDTextBox3"
+        Me.PRODUCT_IDTextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.PRODUCT_IDTextBox3.TabIndex = 1
+        '
+        'PRODUCT_CATEGORYTextBox1
+        '
+        Me.PRODUCT_CATEGORYTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT CATEGORY", True))
+        Me.PRODUCT_CATEGORYTextBox1.Location = New System.Drawing.Point(157, 30)
+        Me.PRODUCT_CATEGORYTextBox1.Name = "PRODUCT_CATEGORYTextBox1"
+        Me.PRODUCT_CATEGORYTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.PRODUCT_CATEGORYTextBox1.TabIndex = 3
+        '
+        'PRODUCT__NAMETextBox1
+        '
+        Me.PRODUCT__NAMETextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT  NAME", True))
+        Me.PRODUCT__NAMETextBox1.Location = New System.Drawing.Point(157, 56)
+        Me.PRODUCT__NAMETextBox1.Name = "PRODUCT__NAMETextBox1"
+        Me.PRODUCT__NAMETextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.PRODUCT__NAMETextBox1.TabIndex = 5
+        '
+        'PRODUCT_SIZETextBox1
+        '
+        Me.PRODUCT_SIZETextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "PRODUCT SIZE", True))
+        Me.PRODUCT_SIZETextBox1.Location = New System.Drawing.Point(157, 82)
+        Me.PRODUCT_SIZETextBox1.Name = "PRODUCT_SIZETextBox1"
+        Me.PRODUCT_SIZETextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.PRODUCT_SIZETextBox1.TabIndex = 7
+        '
+        'LEVELTextBox1
+        '
+        Me.LEVELTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "LEVEL", True))
+        Me.LEVELTextBox1.Location = New System.Drawing.Point(157, 108)
+        Me.LEVELTextBox1.Name = "LEVELTextBox1"
+        Me.LEVELTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.LEVELTextBox1.TabIndex = 9
+        '
+        'UNIT_PRICETextBox1
+        '
+        Me.UNIT_PRICETextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "UNIT PRICE", True))
+        Me.UNIT_PRICETextBox1.Location = New System.Drawing.Point(157, 134)
+        Me.UNIT_PRICETextBox1.Name = "UNIT_PRICETextBox1"
+        Me.UNIT_PRICETextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.UNIT_PRICETextBox1.TabIndex = 11
+        '
+        'MAXIMUM_LEVELTextBox1
+        '
+        Me.MAXIMUM_LEVELTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PRODUCT_CATALOGBindingSource, "MAXIMUM LEVEL", True))
+        Me.MAXIMUM_LEVELTextBox1.Location = New System.Drawing.Point(157, 160)
+        Me.MAXIMUM_LEVELTextBox1.Name = "MAXIMUM_LEVELTextBox1"
+        Me.MAXIMUM_LEVELTextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.MAXIMUM_LEVELTextBox1.TabIndex = 13
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1369, 661)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TabControl2)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.SHOPDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1087,6 +1466,12 @@ Partial Class Form1
         CType(Me.PRODUCT_CATALOGDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCT_CATALOGBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl2.ResumeLayout(False)
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
+        CType(Me.PRODUCT_DETAILSDataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage6.ResumeLayout(False)
+        Me.TabPage6.PerformLayout()
+        CType(Me.PRODUCT_CATALOGDataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1173,4 +1558,42 @@ Partial Class Form1
     Friend WithEvents btnNext As Button
     Friend WithEvents btnAdd As Button
     Friend WithEvents txtUsername As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents PRODUCT_DETAILSDataGridView1 As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
+    Friend WithEvents PRODUCT_IDTextBox2 As TextBox
+    Friend WithEvents ORDER_IDTextBox2 As TextBox
+    Friend WithEvents QUANTITYTextBox1 As TextBox
+    Friend WithEvents PRODUCT_CATALOGDataGridView1 As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
+    Friend WithEvents PRODUCT_IDTextBox3 As TextBox
+    Friend WithEvents PRODUCT_CATEGORYTextBox1 As TextBox
+    Friend WithEvents PRODUCT__NAMETextBox1 As TextBox
+    Friend WithEvents PRODUCT_SIZETextBox1 As TextBox
+    Friend WithEvents LEVELTextBox1 As TextBox
+    Friend WithEvents UNIT_PRICETextBox1 As TextBox
+    Friend WithEvents MAXIMUM_LEVELTextBox1 As TextBox
+    Friend WithEvents PRODUCT_IDLabel2 As Label
+    Friend WithEvents ORDER_IDLabel2 As Label
+    Friend WithEvents QUANTITYLabel1 As Label
+    Friend WithEvents PRODUCT_IDLabel3 As Label
+    Friend WithEvents PRODUCT_CATEGORYLabel1 As Label
+    Friend WithEvents PRODUCT__NAMELabel1 As Label
+    Friend WithEvents PRODUCT_SIZELabel1 As Label
+    Friend WithEvents LEVELLabel1 As Label
+    Friend WithEvents UNIT_PRICELabel1 As Label
+    Friend WithEvents MAXIMUM_LEVELLabel1 As Label
 End Class
