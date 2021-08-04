@@ -61,6 +61,16 @@
         cmbUsername.Items.Add("Cashier")
         cmbUsername.Items.Add("Stock Controller")
 
+        cmbSearch.Items.Add("CUSTOMER ID")
+        cmbSearch.Items.Add("TITLE")
+        cmbSearch.Items.Add("FIRST NAME")
+        cmbSearch.Items.Add("LASTNAME")
+        cmbSearch.Items.Add("ADRESS")
+        cmbSearch.Items.Add("CONTACT NUMBER")
+
+
+
+
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -96,4 +106,27 @@ Feedback:
         MsgBox("Check your Record", vbInformation)
         Exit Sub
     End Sub
+
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        Dim stock As String
+        stock = cmbSearch.Text
+
+        Select Case stock
+            Case "CUSTOMER ID"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "CUSTOMER ID ='" & txtSearch.Text & "'"
+            Case "TITLE"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "TITLE='" & txtSearch.Text & "'"
+            Case "FIRST NAME"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "FIRST NAME ='" & txtSearch.Text & "'"
+            Case "LASTNAME"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "LASTNAME ='" & txtSearch.Text & "'"
+            Case "ADRESS"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "ADRESS ='" & txtSearch.Text & "'"
+            Case "CONTACT"
+                Me.CUSTOMER_DETAILSBindingSource.Filter = "CONTACT NUMBER ='" & txtSearch.Text & "'"
+
+        End Select
+
+    End Sub
+
 End Class

@@ -70,6 +70,9 @@ Partial Class Form1
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.cmbSearch = New System.Windows.Forms.ComboBox()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -238,7 +241,7 @@ Partial Class Form1
         'LASTNAMELabel
         '
         LASTNAMELabel.AutoSize = True
-        LASTNAMELabel.Location = New System.Drawing.Point(6, 104)
+        LASTNAMELabel.Location = New System.Drawing.Point(262, 22)
         LASTNAMELabel.Name = "LASTNAMELabel"
         LASTNAMELabel.Size = New System.Drawing.Size(77, 13)
         LASTNAMELabel.TabIndex = 6
@@ -247,7 +250,7 @@ Partial Class Form1
         'ADDRESSLabel
         '
         ADDRESSLabel.AutoSize = True
-        ADDRESSLabel.Location = New System.Drawing.Point(6, 130)
+        ADDRESSLabel.Location = New System.Drawing.Point(262, 48)
         ADDRESSLabel.Name = "ADDRESSLabel"
         ADDRESSLabel.Size = New System.Drawing.Size(70, 13)
         ADDRESSLabel.TabIndex = 8
@@ -256,7 +259,7 @@ Partial Class Form1
         'CONTACT_NUMBERLabel
         '
         CONTACT_NUMBERLabel.AutoSize = True
-        CONTACT_NUMBERLabel.Location = New System.Drawing.Point(6, 156)
+        CONTACT_NUMBERLabel.Location = New System.Drawing.Point(247, 75)
         CONTACT_NUMBERLabel.Name = "CONTACT_NUMBERLabel"
         CONTACT_NUMBERLabel.Size = New System.Drawing.Size(126, 13)
         CONTACT_NUMBERLabel.TabIndex = 10
@@ -632,6 +635,9 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.AutoScroll = True
+        Me.TabPage1.Controls.Add(Me.txtSearch)
+        Me.TabPage1.Controls.Add(Me.cmbSearch)
+        Me.TabPage1.Controls.Add(Me.btnSearch)
         Me.TabPage1.Controls.Add(Me.btnClose)
         Me.TabPage1.Controls.Add(Me.btnDelete)
         Me.TabPage1.Controls.Add(Me.btnSave)
@@ -659,9 +665,33 @@ Partial Class Form1
         Me.TabPage1.Text = "CUSTOMER DETAILS"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'txtSearch
+        '
+        Me.txtSearch.Location = New System.Drawing.Point(640, 35)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(153, 20)
+        Me.txtSearch.TabIndex = 21
+        '
+        'cmbSearch
+        '
+        Me.cmbSearch.FormattingEnabled = True
+        Me.cmbSearch.Location = New System.Drawing.Point(640, 8)
+        Me.cmbSearch.Name = "cmbSearch"
+        Me.cmbSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cmbSearch.TabIndex = 20
+        '
+        'btnSearch
+        '
+        Me.btnSearch.Location = New System.Drawing.Point(673, 88)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(108, 39)
+        Me.btnSearch.TabIndex = 19
+        Me.btnSearch.Text = " SEARCH"
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(490, 156)
+        Me.btnClose.Location = New System.Drawing.Point(455, 104)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(91, 23)
         Me.btnClose.TabIndex = 18
@@ -670,7 +700,7 @@ Partial Class Form1
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(490, 99)
+        Me.btnDelete.Location = New System.Drawing.Point(552, 104)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(91, 23)
         Me.btnDelete.TabIndex = 17
@@ -679,7 +709,7 @@ Partial Class Form1
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(490, 46)
+        Me.btnSave.Location = New System.Drawing.Point(349, 104)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(91, 23)
         Me.btnSave.TabIndex = 16
@@ -688,7 +718,7 @@ Partial Class Form1
         '
         'btnPrevious
         '
-        Me.btnPrevious.Location = New System.Drawing.Point(313, 156)
+        Me.btnPrevious.Location = New System.Drawing.Point(3, 104)
         Me.btnPrevious.Name = "btnPrevious"
         Me.btnPrevious.Size = New System.Drawing.Size(92, 23)
         Me.btnPrevious.TabIndex = 15
@@ -697,7 +727,7 @@ Partial Class Form1
         '
         'btnNext
         '
-        Me.btnNext.Location = New System.Drawing.Point(313, 104)
+        Me.btnNext.Location = New System.Drawing.Point(116, 104)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(92, 23)
         Me.btnNext.TabIndex = 14
@@ -706,7 +736,7 @@ Partial Class Form1
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(313, 45)
+        Me.btnAdd.Location = New System.Drawing.Point(225, 104)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(92, 23)
         Me.btnAdd.TabIndex = 13
@@ -719,7 +749,7 @@ Partial Class Form1
         Me.CUSTOMER_DETAILSDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CUSTOMER_DETAILSDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.CUSTOMER_DETAILSDataGridView.DataSource = Me.CUSTOMER_DETAILSBindingSource
-        Me.CUSTOMER_DETAILSDataGridView.Location = New System.Drawing.Point(0, 198)
+        Me.CUSTOMER_DETAILSDataGridView.Location = New System.Drawing.Point(9, 133)
         Me.CUSTOMER_DETAILSDataGridView.Name = "CUSTOMER_DETAILSDataGridView"
         Me.CUSTOMER_DETAILSDataGridView.Size = New System.Drawing.Size(643, 171)
         Me.CUSTOMER_DETAILSDataGridView.TabIndex = 12
@@ -792,7 +822,7 @@ Partial Class Form1
         'LASTNAMETextBox
         '
         Me.LASTNAMETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CUSTOMER_DETAILSBindingSource, "LASTNAME", True))
-        Me.LASTNAMETextBox.Location = New System.Drawing.Point(123, 101)
+        Me.LASTNAMETextBox.Location = New System.Drawing.Point(379, 19)
         Me.LASTNAMETextBox.Name = "LASTNAMETextBox"
         Me.LASTNAMETextBox.Size = New System.Drawing.Size(100, 20)
         Me.LASTNAMETextBox.TabIndex = 7
@@ -800,7 +830,7 @@ Partial Class Form1
         'ADDRESSTextBox
         '
         Me.ADDRESSTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CUSTOMER_DETAILSBindingSource, "ADDRESS", True))
-        Me.ADDRESSTextBox.Location = New System.Drawing.Point(123, 127)
+        Me.ADDRESSTextBox.Location = New System.Drawing.Point(379, 45)
         Me.ADDRESSTextBox.Name = "ADDRESSTextBox"
         Me.ADDRESSTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ADDRESSTextBox.TabIndex = 9
@@ -808,7 +838,7 @@ Partial Class Form1
         'CONTACT_NUMBERTextBox
         '
         Me.CONTACT_NUMBERTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CUSTOMER_DETAILSBindingSource, "CONTACT NUMBER", True))
-        Me.CONTACT_NUMBERTextBox.Location = New System.Drawing.Point(123, 153)
+        Me.CONTACT_NUMBERTextBox.Location = New System.Drawing.Point(379, 71)
         Me.CONTACT_NUMBERTextBox.Name = "CONTACT_NUMBERTextBox"
         Me.CONTACT_NUMBERTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CONTACT_NUMBERTextBox.TabIndex = 11
@@ -1320,7 +1350,7 @@ Partial Class Form1
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(855, 340)
+        Me.TabPage6.Size = New System.Drawing.Size(855, 46)
         Me.TabPage6.TabIndex = 1
         Me.TabPage6.Text = "PRODUCTCATALOG"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -1438,7 +1468,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1369, 661)
+        Me.ClientSize = New System.Drawing.Size(1369, 570)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TabControl2)
         Me.Controls.Add(Me.TabControl1)
@@ -1596,4 +1626,7 @@ Partial Class Form1
     Friend WithEvents LEVELLabel1 As Label
     Friend WithEvents UNIT_PRICELabel1 As Label
     Friend WithEvents MAXIMUM_LEVELLabel1 As Label
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents cmbSearch As ComboBox
+    Friend WithEvents btnSearch As Button
 End Class
